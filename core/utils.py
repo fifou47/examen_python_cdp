@@ -1,0 +1,2 @@
+# Fonctions utilitaires supplémentaires
+pass
