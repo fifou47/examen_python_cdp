@@ -1,16 +1,14 @@
 # Système de Surveillance Intelligente de Logs
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 Système d'analyse de logs en temps quasi-réel avec détection d'anomalies, génération de rapports et visualisation statistique.
 
-## 📦 Installation
+##  Installation
 
 1. **Cloner le dépôt** :
 ```bash
-   git clone https://github.com/votre-utilisateur/surveillance-logs.git
-   cd surveillance-logs
+   git clone https://github.com/fifo47/examen_python_cdp.git
+   cd examen_python_cdp
 ```
 Création d'un environnement python 
 
@@ -31,16 +29,14 @@ Commande CLI principal
 
 ```bash
 # Traitement complet (lecture + analyse + rapports)
-python main.py --start
 
 # Afficher les alertes détectées
-python main.py --alerts
 
 # Générer les rapports (TXT + PDF)
-python main.py --report
 
 # Générer la visualisation statistique
-python main.py --plot
+
+python main.py --start --alerts  --report --plot
 ```
 
 # Fonctionnalités
