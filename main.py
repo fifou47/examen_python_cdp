@@ -44,10 +44,12 @@ async def main():
 
     if args.alerts:
         print("--- ALERTES DÉTECTÉES ---")
+        analyzer.load_alerts() 
         if not analyzer.alerts:
             print("Aucune alerte détectée.")
         for a in analyzer.alerts:
             print(json.dumps(a, indent=2))
+
 
     if args.report:
         print("Génération du rapport...")

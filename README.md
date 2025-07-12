@@ -29,14 +29,13 @@ Commande CLI principal
 
 ```bash
 # Traitement complet (lecture + analyse + rapports)
-
+# Générer la visualisation statistique
+# Générer les rapports (TXT + PDF)
 # Afficher les alertes détectées
 
-# Générer les rapports (TXT + PDF)
+python main.py --start --alerts --report --plot
 
-# Générer la visualisation statistique
 
-python main.py --start --alerts  --report --plot
 ```
 
 # Fonctionnalités

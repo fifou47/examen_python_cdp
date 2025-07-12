@@ -41,3 +41,10 @@ class EventAnalyzer:
         total = len(self.events)
         critical = len([e for e in self.events if e.level in self.critical_levels])
         return { 'total_events': total, 'critical_events': critical, 'alerts': len(self.alerts) }
+    
+    def load_alerts(self, file_path: str = 'data/alerts.json'):
+        try:
+            with open(file_path, 'r') as f:
+                self.alerts = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            self.alerts = []

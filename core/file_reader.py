@@ -1,7 +1,7 @@
 import asyncio
 import logging
 
-async def read_log_file(file_path: str, delay: float = 2):
+async def read_log_file(file_path: str, delay: float = 0.2):
     """Lit le fichier ligne par ligne de façon asynchrone avec un délai entre chaque ligne."""
     try:
         with open(file_path, 'r') as f:
